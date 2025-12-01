@@ -1,0 +1,1 @@
+<h1 style= "text-align:center">Record deleted With Id  : ${deleteId}</h1>
