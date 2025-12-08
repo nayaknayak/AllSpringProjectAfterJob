@@ -1,15 +1,10 @@
 package com.dtx.service;
 
 import java.util.List;
-import java.util.Optional;
-import java.util.function.Function;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
-import org.springframework.data.repository.query.FluentQuery.FetchableFluentQuery;
 import org.springframework.stereotype.Service;
 
 import com.dtx.model.Employee;
@@ -20,11 +15,12 @@ public class EmployeeManagementService implements IEmployeeManagementService {
 	public IEmployeeRepo repo;
 
 	@Override
-	public List<Employee> getAllEmployee() {
+	public Page<Employee> getAllEmployee(Pageable pageable) {
 		//Employee empSaved = repo.save(emp);
-		//Pageable pageble= PageRequest.of(0, 5);
+		Page<Employee> page =repo.findAll( pageable);
 		
-		return repo.findAll();
+		
+		return page;
 	}
 
 	@Override
