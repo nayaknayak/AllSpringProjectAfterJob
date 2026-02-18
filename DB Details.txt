@@ -10,9 +10,6 @@ spring:
     show-sql: true
   application:
     name:SERVER-CONFIG
-	
-	
-	for QA
 
 
 	
