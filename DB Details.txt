@@ -1,2 +1,0 @@
-spring.name=satya
-spring.lname=nayak
