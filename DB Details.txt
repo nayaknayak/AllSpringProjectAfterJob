@@ -1,17 +1,2 @@
-spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/spring_test
-    username: root
-    password: root
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-  application:
-    name:SERVER-CONFIG
-
-
-
-
-	
+spring.name=satya
+spring.lname=nayak
